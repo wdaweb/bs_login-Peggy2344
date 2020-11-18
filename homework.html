@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Login</title>
+  <style>
+    body{
+      background-color: #8BC6EC;
+      background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    }
+    .box{
+      background: rgba(255,255,255,0.5);
+      width: 450px;
+      height: 480px;
+      border-radius: 10px;
+      position: relative;
+    }
+    form{
+      width: 80%;
+      height: 70%;
+    }
+    .user {
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .icon{
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      font-size: 3rem;
+    }
+    .inputarea{
+      position: relative;
+    }
+    .usericon{
+      position: absolute;
+      font-size: 1.5rem;
+      top: 40px;
+      left: 25px;
+    }
+    .lockicon{
+      position: absolute;
+      font-size: 1.5rem;
+      bottom: 98px;
+      left: 25px;
+    }
+    #Username{
+      padding-left: 50px;
+    }
+    #password{
+      padding-left: 50px;
+    }
+  </style>
+</head>
+<body class="vh-100">
+  <div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="d-flex align-items-center justify-content-center flex-column box">
+      <div class="user"><i class="far fa-user icon"></i></div>
+      <h1 class="text-center mb-3 mt-5">Sign-In</h1>
+      <form class="row">
+        <div class="form-group d-flex align-items-center justify-content-center flex-column col-12 inputarea">
+          <i class="fas fa-user usericon"></i>
+          <input type="text" class="form-control w-100 mb-3 py-4" id="Username" placeholder="Username">
+          <i class="fas fa-lock lockicon"></i>
+          <input type="password" class="form-control w-100 mb-3 py-4" id="password" placeholder="Password">
+          <button type="submit" class="btn btn-secondary w-100 p-2">Login</button>
+        </div>
+        <div class="form-group col-12">
+          <div class="form-check d-flex justify-content-between">
+              <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+              <label class="form-check-label text-dark" for="inlineFormCheck">
+                Remember me
+              </label>
+              <a class="text-dark" href="# ">Forgot Password?</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
